@@ -6,28 +6,30 @@
 <title>James Dyche</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-<style>
-body {
-    background: transparent;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 40px 20px;
-    color: #222;
-    opacity: 0;
-    animation: fadeIn 1.2s ease forwards;
-}
 
-@keyframes fadeIn {
+<style>
+    body {
+        background: transparent;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 40px 20px;
+        color: #222;
+        opacity: 0;
+        animation: fadeIn 1.2s ease forwards;
+  }
+
+  @keyframes fadeIn {
     to { opacity: 1; }
-}
+  }
 
 .letter-snow {
     position: fixed;
     inset: 0;
     pointer-events: none;
-    z-index: 1;
+    z-index: 0;
     background-color: #82a2ba;
-    color: rgba(255, 255, 240, 0.25);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 240, 0.25); /* faint white */
     font-weight: 600;
     overflow: hidden;
 }
@@ -41,48 +43,12 @@ body {
     top: var(--y);
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
     filter: blur(1px);
+
+
 }
 
-.container {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.section {
-    background-color: #fdfaf6;
-    padding: 30px 32px;
-    border-radius: 12px;
-    margin-bottom: 22px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-    text-align: left;
-}
-
-.section h2 {
-    color: #8FA58C;
-    margin-top: 0;
-    font-size: 1.3rem;
-    margin-bottom: 6px;
-}
-
-.section p {
-    margin-top: 0;
-    margin-bottom: 12px;
-    color: #555;
-    line-height: 1.5;
-}
-
-.bio-section {
+    .bio-section {
     text-align: center;
-}
-
-.bio-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
 }
 
 .bio-photo {
@@ -93,6 +59,23 @@ body {
     border: 3px solid #8FA58C;
     margin-bottom: 15px;
 }
+.bio-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.bio-text {
+  max-width: 420px;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
+  flex: 1;
+}
+
+
 
 .bio-text {
     max-width: 500px;
@@ -100,13 +83,142 @@ body {
     color: #555;
     line-height: 1.5;
 }
-
+    
 .book-cover:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
-.etsy-logo {
+
+    .container {
+        position: relative;
+        z-index: 1;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .contact-section {
+  background: #f7f3e8;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fafafa;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+.contact-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+    .footer {
+    border-top: 1px solid #8FA58C;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #fdfdfd;
+    margin-top: 30px;
+    padding-top: 10px;
+    
+}
+
+
+    h1 {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 0.3rem;
+        letter-spacing: 0.5px;
+    }
+
+    .tagline {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+        color: #fdfdfd;
+        line-height: 1.4;
+
+    }
+
+    .section {
+        background-color: #fdfaf6; /* soft cream */
+        padding: 30px 32px;
+        border-radius: 12px;
+        margin-bottom: 22px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        text-align: left;
+    }
+
+    .section h2 {
+        color: #8FA58C;
+        margin-top: 0;
+        font-size: 1.3rem;
+        margin-bottom: 6px;
+    }
+
+    .section p {
+        margin-top: 0;
+        margin-bottom: 12px;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.25s ease;
+
+    }
+
+    a:hover {
+        color: #8FA58C;
+        text-decoration: underline;
+    }
+
+    /* Etsy logo */
+ .etsy-logo {
     width: 100%;
     max-width: 600px;
     border-radius: 8px;
@@ -115,76 +227,74 @@ body {
     display: inline-block;
 }
 
-/* FIXED: Only one definition */
-.freelance-row {
+
+    /* Giraffe icon */
+    .freelance-row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .giraffe-icon {
+        border: 2px solid #8FA58C;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: clamp(40px, 20vw, 200px);
+    }
+
+    .freelance-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* Giraffe icon */
-.giraffe-icon {
-    border: 2px solid #8FA58C;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* FIXED: Contact section merged */
-.contact-section {
-    background: #f7f3e8;
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 700px;
-    margin: 40px auto;
-    text-align: center;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    max-width: 420px;
-    margin: 0 auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-family: inherit;
-    font-size: 1rem;
-    background: #fafafa;
-}
-
-.contact-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.footer {
-    border-top: 1px solid #8FA58C;
-    text-align: center;
-    font-size: 0.85rem;
-    color: #fdfdfd;
-    margin-top: 30px;
-    padding-top: 10px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="letter-snow">
-    <!-- your floating letters -->
+    <div class="letter-snow">
+    <span style="--x:10%; --y:15%; --size:2rem; --angle:-12deg;">A</span>
+    <span style="--x:70%; --y:25%; --size:1.4rem; --angle:8deg;">R</span>
+    <span style="--x:40%; --y:60%; --size:3rem; --angle:-20deg;">E</span>
+    <span style="--x:85%; --y:75%; --size:1.2rem; --angle:15deg;">T</span>
+    <span style="--x:25%; --y:80%; --size:2.6rem; --angle:-5deg;">S</span>
+    <span style="--x:55%; --y:10%; --size:1.8rem; --angle:22deg;">L</span>
+    <span style="--x:15%; --y:50%; --size:1.1rem; --angle:-18deg;">O</span>
+    <span style="--x:90%; --y:40%; --size:2.2rem; --angle:12deg;">N</span>
+    <span style="--x:5%; --y:30%; --size:1.6rem; --angle:-10deg;">M</span>
+<span style="--x:20%; --y:10%; --size:2.2rem; --angle:14deg;">H</span>
+<span style="--x:33%; --y:75%; --size:1.3rem; --angle:-22deg;">I</span>
+<span style="--x:48%; --y:45%; --size:2.8rem; --angle:6deg;">C</span>
+<span style="--x:62%; --y:15%; --size:1.7rem; --angle:-18deg;">P</span>
+<span style="--x:78%; --y:55%; --size:2.4rem; --angle:12deg;">F</span>
+<span style="--x:12%; --y:65%; --size:1.2rem; --angle:-8deg;">U</span>
+<span style="--x:88%; --y:20%; --size:2.1rem; --angle:20deg;">D</span>
+<span style="--x:3%; --y:42%; --size:1.9rem; --angle:-14deg;">B</span>
+<span style="--x:28%; --y:22%; --size:1.3rem; --angle:17deg;">K</span>
+<span style="--x:47%; --y:82%; --size:2.5rem; --angle:-9deg;">W</span>
+<span style="--x:63%; --y:33%; --size:1.1rem; --angle:25deg;">Y</span>
+<span style="--x:76%; --y:12%; --size:2.0rem; --angle:-6deg;">Q</span>
+<span style="--x:92%; --y:58%; --size:1.4rem; --angle:19deg;">V</span>
+<span style="--x:18%; --y:90%; --size:2.7rem; --angle:-21deg;">J</span>
+<span style="--x:51%; --y:5%; --size:1.6rem; --angle:8deg;">Z</span>
+        <!-- punctuation + ghost letters -->
+<span style="--x:12%; --y:5%; --size:4.5rem; --angle:-8deg; opacity:0.08;">.</span>
+<span style="--x:82%; --y:88%; --size:5rem; --angle:12deg; opacity:0.06;">,</span>
+<span style="--x:60%; --y:48%; --size:6rem; --angle:-15deg; opacity:0.05;">A</span>
+
+<!-- tiny constellation cluster -->
+<span style="--x:34%; --y:38%; --size:0.9rem; --angle:22deg; opacity:0.35;">t</span>
+<span style="--x:36%; --y:40%; --size:1.1rem; --angle:-12deg; opacity:0.28;">o</span>
+<span style="--x:38%; --y:42%; --size:0.8rem; --angle:5deg; opacity:0.32;">n</span>
+
+<!-- soft sage‑tinted whisper -->
+<span style="--x:72%; --y:30%; --size:3rem; --angle:18deg; opacity:0.12; color:rgba(240,255,240,0.25);">S</span>
+
+
 </div>
+
 
 <div class="container">
 
@@ -199,18 +309,30 @@ body {
     <div class="bio-row">
         <img src="james-photo.jpeg" class="bio-photo" alt="Photo of James Dyche">
         <div class="bio-text">
-            Hello - I’m James. I write poems, prose, and intentional little things...
+            Hello - I’m James. I write poems, prose, and intentional little things for people who feel the world a bit too deeply. This space is a small, quiet corner of the internet where I gather the work I make and the paths I’m building.
+I also run Dyche Studio, a minimalist design shop where I create cards and gifts shaped by handwriting, humour, and clean, simple lines. It’s the visual side of the same creative instinct that drives my writing - honest, pared‑back, and human.
+Alongside my own projects, I offer freelance writing for those who need a warm, conversational voice for their brand, stories, or websites. If you’d like to talk about working together, you’re welcome to reach out.
+
         </div>
     </div>
 </div>
 
 <div class="section">
     <h2>Debut Collection</h2>
-    <p>I’ve just released my first poetry collection...</p>
+    <p>
+        I’ve just released my first poetry collection - a hybrid book of poems and prose exploring emotional precision, quiet resilience, and the small moments that shape us. Available in paperback and Kindle on Amazon:
+    </p>
 
-    <a href="https://amzn.eu/d/03mnDy3p" target="_blank">
-        <img src="TEOTTB.jpg" class="book-cover" alt="Book cover" style="max-width:240px;">
-    </a>
+    <!-- Clickable Book Cover -->
+<a href="https://amzn.eu/d/03mnDy3p" 
+   target="_blank" 
+   style="display:block; margin:0 auto; width:max-content;">
+    <img src="TEOTTB.jpg"
+         class="book-cover"
+         alt="Book cover for my debut collection"
+         style="max-width:240px; border-radius:8px; display:block; margin:20px auto; transition:0.25s ease;">
+</a>
+
 </div>
 
 <div class="section">
