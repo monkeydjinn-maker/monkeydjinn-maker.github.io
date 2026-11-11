@@ -250,6 +250,30 @@
     align-items: center;
 }
 
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 18px;
+    }
+
+    .social-link {
+        display: block;
+        padding: 18px 20px;
+        border: 1px solid #d8dfd6;
+        border-radius: 10px;
+        background: #fff;
+        text-align: center;
+        font-size: 1.05rem;
+    }
+
+    .social-link span {
+        display: block;
+        margin-top: 5px;
+        color: #555;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
     .illustration-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -281,6 +305,10 @@
     }
 
     @media (max-width: 560px) {
+        .social-links {
+            grid-template-columns: 1fr;
+        }
+
         .illustration-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
         }
@@ -359,20 +387,32 @@ This is a small, quiet corner of the internet where I gather the work I make and
     </div>
 </div>
 
+<div class="section" aria-label="Social portfolios">
+    <h2>Explore my work</h2>
+    <p>Follow along for new illustrations, studio updates and visual collections.</p>
+    <div class="social-links">
+        <a class="social-link" href="https://www.instagram.com/dychestudio" target="_blank" rel="noopener noreferrer">
+            Instagram <span>Latest work and studio activity</span>
+        </a>
+        <a class="social-link" href="https://uk.pinterest.com/dychestudio" target="_blank" rel="noopener noreferrer">
+            Pinterest <span>Artwork, ideas and visual collections</span>
+        </a>
+    </div>
+</div>
 <div class="section">
     <h2>Shop</h2>
     <p>Original illustrations, turned into homeware, gifts, and more.</p>
-    <a href="https://dychestudio.etsy.com" target="_blank">
+    <a href="https://dychestudio.etsy.com" target="_blank" rel="noopener noreferrer">
         <img src="EtsyButton.png" class="etsy-logo" alt="Etsy Store Logo">
     </a>
     <br><br>
 
     <!-- Redbubble -->
-    <a href="https://www.redbubble.com/people/dyche-studio" target="_blank">
+    <a href="https://www.redbubble.com/people/dyche-studio" target="_blank" rel="noopener noreferrer">
         <img src="RedbubbleButton.png" class="etsy-logo" alt="Redbubble Store Logo">
     </a>
 
-        <a href="https://www.teepublic.com/user/dyche-studio" target="_blank">
+        <a href="https://www.teepublic.com/user/dyche-studio" target="_blank" rel="noopener noreferrer">
         <img src="TeePublic.png" class="etsy-logo" alt="Redbubble Store Logo">
     </a>
     
@@ -389,24 +429,24 @@ This is a small, quiet corner of the internet where I gather the work I make and
             <figcaption>Ghost Toast</figcaption>
         </figure>
         <figure>
-            <img src="Anth.png" alt="A hand-drawn green leaf illustration">
-            <figcaption>Leaf study</figcaption>
+            <img src="Anth.png" alt="A hand-drawn anthurium leaf illustration">
+            <figcaption>Anthurium Leaf</figcaption>
         </figure>
         <figure>
-            <img src="BHook2.png" alt="Crochet hook and ball of yarn with text reading Boys get hooked too">
-            <figcaption>Boys Get Hooked Too</figcaption>
+            <img src="Gethookedsm.png" alt="Playful Get Hooked crochet illustration">
+            <figcaption>Get Hooked</figcaption>
         </figure>
-                <figure>
-            <img src="Football Black.png" alt="A black line football sketch with black fill patches and a patch of green grass">
-            <figcaption>Football Sketch</figcaption>
+        <figure>
+            <img src="Sharkestsm.png" alt="The Sharkest Tool in the Box illustration">
+            <figcaption>The Sharkest Tool in the Box</figcaption>
         </figure>
-                <figure>
-            <img src="PMB TP.png" alt="A curved barbell with the words Pardon My Bench">
-            <figcaption>Pardon My Bench</figcaption>
+        <figure>
+            <img src="Gardensm.png" alt="Floral illustration">
+            <figcaption>Floral design</figcaption>
         </figure>
-                <figure>
-            <img src="FullofBeans.png" alt="Coffee beans with hand-lettered text reading Full of Beans">
-            <figcaption>Full of Beans</figcaption>
+        <figure>
+            <img src="Camping.png" alt="Camping illustration">
+            <figcaption>Camping</figcaption>
         </figure>
     </div>
 </div>
@@ -419,7 +459,7 @@ This is a small, quiet corner of the internet where I gather the work I make and
 
     <!-- Clickable Book Cover -->
 <a href="https://amzn.eu/d/03mnDy3p" 
-   target="_blank" 
+   target="_blank" rel="noopener noreferrer" 
    style="display:block; margin:0 auto; width:max-content;">
     <img src="TEOTTB.jpg"
          class="book-cover"
@@ -432,8 +472,8 @@ This is a small, quiet corner of the internet where I gather the work I make and
 <div class="section">
     <h2>Poetry & Prose</h2>
     <p>A home for my poems, prose pieces, and creative offerings.</p>
-    <a href="https://ko-fi.com/dyanhiel" target="_blank">Visit my Ko‑fi</a><br><br>
-    <a href="https://www.patreon.com/c/Dyanhiel" target="_blank">Visit my Patreon</a>
+    <a href="https://ko-fi.com/dyanhiel" target="_blank" rel="noopener noreferrer">Visit my Ko‑fi</a><br><br>
+    <a href="https://www.tiktok.com/@dychestudio" target="_blank" rel="noopener noreferrer">Visit my TikTok where I read my poems</a>
 </div>
 
 
@@ -444,7 +484,7 @@ This is a small, quiet corner of the internet where I gather the work I make and
 <div class="section">
     <h2>LinkedIn</h2>
     <p>Connect with me professionally.</p>
-    <a href="https://www.linkedin.com/in/james-benjamin-09041431a" target="_blank">Visit my LinkedIn</a>
+    <a href="https://www.linkedin.com/in/james-benjamin-09041431a" target="_blank" rel="noopener noreferrer">Visit my LinkedIn</a>
 </div>
 
 <div class="section contact-section" id="contact">
@@ -470,3 +510,6 @@ This is a small, quiet corner of the internet where I gather the work I make and
 </div>
 </body>
 </html>
+
+
+
